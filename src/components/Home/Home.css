@@ -19,3 +19,8 @@ video{
     height: 300px;
     width: 200px;
 }
+
+.spinner{
+    display: flex;
+    justify-content: center;
+}

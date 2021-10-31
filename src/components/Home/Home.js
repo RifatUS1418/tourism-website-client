@@ -9,7 +9,7 @@ import { Container, Spinner } from 'react-bootstrap';
 const Home = () => {
     const { loading } = useAuth();
     if (loading) {
-        return <Spinner animation="border" variant="dark" />
+        return <div className="spinner"><Spinner animation="border" variant="dark" /></div>
     }
     return (
         <div>

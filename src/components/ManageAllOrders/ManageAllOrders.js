@@ -32,19 +32,19 @@ const ManageAllOrders = () => {
 
     const handleStatus = (id, data) => {
         console.log(id);
-        const url = `https://bloodcurdling-castle-90813.herokuapp.com/bookings/${id}`;
-        fetch(url, {
-            method: 'PUT',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(data),
-        })
-            // .then(res => res.json())
-            // .then(data => {
-            //     console.log(data)
-            // })
-            .then()
+        // const url = `http://localhost:5000/services/bookings/${id}`;
+        // fetch(url, {
+        //     method: 'PUT',
+        //     headers: {
+        //         'content-type': 'application/json'
+        //     },
+        //     body: JSON.stringify(data),
+        // })
+        //     // .then(res => res.json())
+        //     // .then(data => {
+        //     //     console.log(data)
+        //     // })
+        //     .then()
     }
 
     return (
@@ -64,6 +64,7 @@ const ManageAllOrders = () => {
                                 <p>Email: {order.email}</p>
                                 <p>Address: {order.address}</p>
                                 <button onClick={() => handleDelete(order._id)} className="btn btn-danger mb-3">Remove Order</button>
+
                                 <button onClick={() => handleStatus(order._id, { status: 'Approved' })} className="btn btn-success ms-3 mb-3">Update Status</button>
                             </div>
                         </div>
