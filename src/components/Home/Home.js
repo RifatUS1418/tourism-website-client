@@ -17,7 +17,7 @@ const Home = () => {
             <TripServices></TripServices>
             <div>
                 <video src={video} autoPlay loop muted></video>
-                <h1 className="video-text">Never Stop Exploring the World</h1>
+                <div className="text-container"><h1 className="video-text">Never Stop Exploring the World</h1></div>
             </div>
         </div>
     );
