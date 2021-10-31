@@ -1,0 +1,17 @@
+@media (min-height: 300px) and (max-height: 450px){
+    .login{
+        height: auto;
+    }
+}
+
+.border-radius{
+    border-radius: 31px;
+    border: 0px solid;
+   
+  }
+.custom{
+    background: linear-gradient(123deg, rgb(246, 247, 231) 0%, rgb(250, 241, 237) 89%);
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+}

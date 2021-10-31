@@ -1,0 +1,82 @@
+.service{
+    position: relative;
+}
+.service img{
+    width: 100%;
+    filter: brightness(50%);
+    height: auto;
+}
+
+.place{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color:bisque;
+    font-family: fantasy;
+    font-size: 70px;
+    z-index: 1;
+    /* margin-top: -400px; */
+}
+
+.details{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-right: 12px;
+}
+
+
+
+.price{
+    /* border: 1px solid black; */
+    height: 137px;
+    width: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.under-div{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #faf1ed;
+}
+.line{
+    width: 100%;
+    border-top: 2px solid white;
+}
+.person{
+    font-size: 10px;
+}
+.place-order{
+    box-shadow: rgba(114, 114, 138, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* border: 1px solid black; */
+    margin-left: 12px;
+
+}
+.place-order form {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+form input{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.button{
+    border: none;
+    background-color: #faf1ed;
+    font-weight: bolder;
+    padding: 15px 0;
+}
