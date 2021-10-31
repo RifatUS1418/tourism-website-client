@@ -10,7 +10,7 @@ const MyOrder = () => {
     console.log(user);
     useEffect(() => {
 
-        fetch(`http://localhost:5000/bookings?email=${user.email}`)
+        fetch(`https://bloodcurdling-castle-90813.herokuapp.com/bookings?email=${user.email}`)
             .then(res => res.json())
             .then(data => setMyOrder(data));
     }, [])

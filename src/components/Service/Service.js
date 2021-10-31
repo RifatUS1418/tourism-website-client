@@ -22,7 +22,6 @@ const Service = ({ service }) => {
                             </div>
                         </Card.Body>
                         <Card.Footer>
-                            {/* <Link to={`/details/${id}`}><button className="btn">BOOK NOW</button></Link> */}
                             <Link to={`/placeOrder/${_id}`}><button className="btn">BOOK NOW</button></Link>
                         </Card.Footer>
                     </Card>

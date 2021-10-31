@@ -7,14 +7,14 @@ const ManageAllOrders = () => {
     console.log(allOrder);
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://bloodcurdling-castle-90813.herokuapp.com/bookings')
             .then(res => res.json())
             .then(data => setAllOrder(data))
     }, []);
 
     const handleDelete = id => {
         console.log(id);
-        const url = `http://localhost:5000/bookings/${id}`;
+        const url = `https://bloodcurdling-castle-90813.herokuapp.com/bookings/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
@@ -32,7 +32,7 @@ const ManageAllOrders = () => {
 
     const handleStatus = (id, data) => {
         console.log(id);
-        const url = `http://localhost:5000/bookings/${id}`;
+        const url = `https://bloodcurdling-castle-90813.herokuapp.com/bookings/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

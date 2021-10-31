@@ -20,7 +20,7 @@ const PlaceOrder = () => {
         data.booking = bookedService;
 
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://bloodcurdling-castle-90813.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -39,7 +39,7 @@ const PlaceOrder = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://bloodcurdling-castle-90813.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data));
     }, [])

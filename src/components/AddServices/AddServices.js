@@ -7,7 +7,7 @@ const AddServices = () => {
     const onSubmit = data => {
         console.log(data)
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://bloodcurdling-castle-90813.herokuapp.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
