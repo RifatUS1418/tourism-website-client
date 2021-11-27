@@ -5,12 +5,11 @@
   project link :  https://trip-advisor-4c844.web.app/  
 This project is based on Full-stack with React framework , Firebasae, MongoDB, React-Bootstrap  & made with love.
 
- * Used React router & and Integrated Google Firebase which provides tools for tracking analytics, reporting and fixing app crashes, creating marketing and product experiment.
-
-* Integrated Google Login system
-
-*  Made mobile friendly with responsive
-*  Integrated MongoDB database and Hosted on Heroku as a Back-End.
+•	Developed Login/Sign-in and Register system using firebase. 
+•	Designed Private routes and users must be Login/Sign in to access protected pages.
+•	Users can see their bookings and remove their bookings in My Order Page.
+•  Made mobile friendly with responsive
+•  Integrated MongoDB database and Hosted on Heroku as a Back-End.
 
 
 
