@@ -1,3 +1,23 @@
+*................Projects Description.................*
+  
+  Project Name: Tripadvisor
+  
+  project link :  https://trip-advisor-4c844.web.app/  
+This project is based on Full-stack with React framework , Firebasae, MongoDB, React-Bootstrap  & made with love.
+
+•	Developed Login/Sign-in and Register system using firebase.
+
+•	Designed Private routes and users must be Login/Sign in to access protected pages.
+
+•	Users can see their bookings and remove their bookings in My Order Page.
+
+•  Made mobile friendly with responsive
+
+•  Integrated MongoDB database and Hosted on Heroku as a Back-End.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
