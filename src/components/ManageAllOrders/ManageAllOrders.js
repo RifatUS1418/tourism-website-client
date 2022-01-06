@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 const ManageAllOrders = () => {
     const [allOrder, setAllOrder] = useState([]);
@@ -49,30 +49,34 @@ const ManageAllOrders = () => {
 
     return (
         <div>
-            {
-                allOrder.map(order => <div
-                    key={order._id}
-                >
-                    <Container>
-                        <div className="order-container m-5">
-                            <img src={order?.booking.service_img} alt="" className="img-fluid" />
-                            <div className="text-center mt-3"><small>"Service Key: {order?.booking.service_key}"</small></div>
-                            <div className="text-center"><small>Status: {order?.booking?.status?.service_status}</small></div>
-                            <p className="text-center">Price: {order?.booking.service_price}</p>
-                            <div className="m-3">
-                                <p>Name: {order.displayName}</p>
-                                <p>Email: {order.email}</p>
-                                <p>Address: {order.address}</p>
-                                <button onClick={() => handleDelete(order._id)} className="btn btn-danger mb-3">Remove Order</button>
+            <Row xs={1} md={3} className="g-4">
+                {
+                    allOrder.map(order => <div
+                        key={order._id}
+                    >
+                        <Container>
+                            <div className="order-container m-2">
+                                <img src={order?.booking.service_img} alt="" className="img-fluid" />
+                                <div className="text-center mt-3"><small>"Service Key: {order?.booking.service_key}"</small></div>
+                                <div className="text-center"><small>Status: {order?.booking?.status?.service_status}</small></div>
+                                <p className="text-center">Price: {order?.booking.service_price}</p>
+                                <div className="m-3">
+                                    <p>Name: {order.displayName}</p>
+                                    <p>Email: {order.email}</p>
+                                    <p>Address: {order.address}</p>
+                                    <button onClick={() => handleDelete(order._id)} className="btn btn-danger mb-3">Remove Order</button>
 
-                                <button onClick={() => handleStatus(order._id, { status: 'Approved' })} className="btn btn-success ms-3 mb-3">Update Status</button>
+                                    <button onClick={() => handleStatus(order._id, { status: 'Approved' })} className="btn btn-success ms-3 mb-3">Update Status</button>
+                                </div>
                             </div>
-                        </div>
-                    </Container>
-                </div>)
-            }
+                        </Container>
+                    </div>)
+                }
+            </Row>
         </div>
+
     );
 };
 
 export default ManageAllOrders;
+

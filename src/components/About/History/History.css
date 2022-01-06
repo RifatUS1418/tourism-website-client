@@ -1,0 +1,46 @@
+.history{
+    background-image: url(../images/background.jpg);
+    background: rgb(240, 224, 214);
+    background-attachment: fixed;
+}
+
+.history-background{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.section-title{
+    margin-top: 30px;
+    font-size: 46px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.section-title::before{
+    content:'';
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 30%;
+}
+
+.underline::before{
+    content:'';
+    position: absolute;
+    left: 14%;
+    background-color: white;
+    height: 2px;
+    width: 30%;
+}
+.history-blog{
+    text-align: left;
+}
+
+.history-heading{
+    color:#34495E;
+}
+
+.history-para{
+    color:#7F828D;
+}

@@ -32,21 +32,19 @@ const Order = ({ order }) => {
             })
     }
     return (
-        <div>
-            <Container>
-                <div className="order-container m-5">
-                    <img src={booking?.service_img} alt="" className="img-fluid" />
-                    <div className="text-center mt-3"><small>"Service Key: {booking?.service_key}"</small></div>
-                    <p className="text-center">Price: {booking?.service_price}</p>
-                    <div className="m-3">
-                        <p>Name: {displayName}</p>
-                        <p>Email: {email}</p>
-                        <p>Address: {address}</p>
-                        <button onClick={() => handleDelete(_id)} className="btn btn-danger mb-3">Remove Order</button>
-                    </div>
+        <Container>
+            <div className="order-container m-5">
+                <img src={booking?.service_img} alt="" className="img-fluid" />
+                <div className="text-center mt-3"><small>"Service Key: {booking?.service_key}"</small></div>
+                <p className="text-center">Price: {booking?.service_price}</p>
+                <div className="m-3">
+                    <p>Name: {displayName}</p>
+                    <p>Email: {email}</p>
+                    <p>Address: {address}</p>
+                    <button onClick={() => handleDelete(_id)} className="btn btn-danger mb-3">Remove Order</button>
                 </div>
-            </Container>
-        </div>
+            </div>
+        </Container>
     );
 };
 

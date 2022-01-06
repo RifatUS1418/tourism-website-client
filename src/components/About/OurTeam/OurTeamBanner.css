@@ -1,0 +1,7 @@
+.team-banner{
+    background-image: url(../images/teamback.jpg);
+    background-attachment: fixed;
+    height: 45vh;
+    background-position: center;
+    
+}

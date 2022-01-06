@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import './Banner.css';
 
 const Banner = () => {
     return (
@@ -7,7 +8,7 @@ const Banner = () => {
             <Carousel variant="dark">
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 img-height"
                         src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
                         alt="First slide"
                     />
@@ -18,7 +19,7 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 img-height"
                         src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=873&q=80"
                         alt="Second slide"
                     />
@@ -30,7 +31,7 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 img-height"
                         src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"
                         alt="Third slide"
                     />

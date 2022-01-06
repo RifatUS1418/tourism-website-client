@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import useAuth from '../../hooks/useAuth';
 import Order from '../Order/Order';
+import { Row } from 'react-bootstrap';
 
 const MyOrder = () => {
     const [myOrder, setMyOrder] = useState([]);
@@ -17,12 +18,14 @@ const MyOrder = () => {
 
     return (
         <div>
-            {
-                myOrder.map(order => <Order
-                    key={order._id}
-                    order={order}>
-                </Order>)
-            }
+            <Row xs={1} md={3} className="g-4">
+                {
+                    myOrder.map(order => <Order
+                        key={order._id}
+                        order={order}>
+                    </Order>)
+                }
+            </Row>
         </div >
     );
 };
